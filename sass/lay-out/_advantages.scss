@@ -22,6 +22,7 @@
 
 .advantages__list {
   display: flex;
+
   gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
@@ -32,6 +33,7 @@
 
 .advantages__icon {
   display: flex;
+
   margin-bottom: 30px;
   justify-content: center;
   background-color: var(--background-color-advetges);
