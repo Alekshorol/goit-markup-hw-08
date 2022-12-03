@@ -1,9 +1,11 @@
 .footer__container {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .social {
-  margin-left: 70px;
+  margin-left: auto;
 }
 
 .btn-submit-telegram {
@@ -23,6 +25,8 @@
 .footer__contacts {
   margin-top: 20px;
   margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__address {
@@ -36,6 +40,8 @@
   color: var(--list-color);
   transition: color 250ms var(--color-transition);
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 
   .contact-list &:hover,
   .contact-list &:focus {

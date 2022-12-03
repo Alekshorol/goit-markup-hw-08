@@ -1044,14 +1044,16 @@ img {
   fill: var(--title-text-color);
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .social {
-  margin-left: 70px;
+  margin-left: auto;
 }
 
 .btn-submit-telegram {
@@ -1071,6 +1073,8 @@ img {
 .footer__contacts {
   margin-top: 20px;
   margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__address {
@@ -1085,6 +1089,8 @@ img {
   -webkit-transition: color 250ms var(--color-transition);
   transition: color 250ms var(--color-transition);
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-list .contacts:hover, .contact-list .contacts:focus {
   color: var(--title-text-color);
