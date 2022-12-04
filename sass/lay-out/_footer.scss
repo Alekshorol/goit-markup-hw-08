@@ -4,17 +4,72 @@
   }
 }
 
-.social {
-  margin-left: auto;
+.addres-social-wrapper {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
 }
 
+.footer__addres-wrapper {
+  @media screen and (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.social {
+  @media screen and (max-width: 481px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1199px) {
+    margin-left: 70px;
+  }
+}
 .btn-submit-telegram {
   margin-left: 10px;
   vertical-align: middle;
 }
 
 .form-footer {
-  margin-left: auto;
+  @media screen and (min-width: 1199px) {
+    margin-left: auto;
+  }
+}
+
+.form-footer__social {
+  @media screen and (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  @media screen and (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.input-label {
+  @media screen and (max-width: 481px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 767px) {
+    margin-top: -20px;
+  }
 }
 
 .footer {
@@ -23,10 +78,17 @@
 }
 
 .footer__contacts {
-  margin-top: 20px;
-  margin-bottom: 9px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (max-width: 481px) {
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: 767px) {
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 
 .footer__address {
@@ -40,8 +102,6 @@
   color: var(--list-color);
   transition: color 250ms var(--color-transition);
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
 
   .contact-list &:hover,
   .contact-list &:focus {
@@ -64,7 +124,21 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 20px;
+
+  @media screen and (max-width: 481px) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 767px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    margin-bottom: 20px;
+  }
 }
 
 .social-footer {
