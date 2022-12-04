@@ -13,13 +13,7 @@
 }
 
 .footer__addres-wrapper {
-  @media screen and (max-width: 481px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,14 +119,13 @@
   text-transform: uppercase;
   color: var(--white-color);
 
-  @media screen and (max-width: 481px) {
+  @media screen and (max-width: 1199px) {
     align-items: center;
     justify-content: center;
   }
 
   @media screen and (min-width: 767px) {
     align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
   }
 
