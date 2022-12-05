@@ -61,6 +61,10 @@
   &:focus {
     color: var(--title-text-color);
   }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .site-nav .link.current {
@@ -95,8 +99,7 @@
   align-items: center;
 
   @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
 
   @media screen and (max-width: 767px) {
@@ -104,6 +107,15 @@
   }
 }
 
-.auth-nav .item + .item {
+.auth-nav .item-mail + .item-tel {
   margin-left: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+  }
+}
+.item-mail {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
