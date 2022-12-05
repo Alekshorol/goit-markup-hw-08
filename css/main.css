@@ -90,8 +90,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
-  outline-offset: -1px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -492,10 +490,15 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
+  min-width: 450px;
   background-color: var(--white-color);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 1199px) {
+  .modal {
+    min-width: 528px;
+  }
 }
 
 .input-label {
@@ -514,12 +517,18 @@ img {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   margin-bottom: 12px;
   margin-top: 0;
+}
+@media screen and (min-width: 1199px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-name {

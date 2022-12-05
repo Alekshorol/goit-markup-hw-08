@@ -16,12 +16,18 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc(30 / 20);
+
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   margin-bottom: 12px;
   margin-top: 0;
+
+  @media screen and (min-width: 1199px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-name {
