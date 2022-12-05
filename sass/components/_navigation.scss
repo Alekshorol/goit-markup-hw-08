@@ -14,6 +14,10 @@
 .site-nav {
   display: flex;
   margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav .link {
@@ -89,6 +93,15 @@
   margin-top: auto;
   margin-bottom: auto;
   align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .auth-nav .item + .item {
