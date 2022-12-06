@@ -1,6 +1,7 @@
 .main-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .site-nav {
@@ -93,9 +94,6 @@
 
 .auth-nav {
   display: flex;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
   align-items: center;
 
   @media screen and (max-width: 1199px) {

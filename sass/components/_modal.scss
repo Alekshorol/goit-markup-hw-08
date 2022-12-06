@@ -1,7 +1,7 @@
 .input-label {
   width: 358px;
   height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-input);
   border-radius: 4px;
   background-color: var(--background-color-hero-roof);
   padding-left: 16px;
@@ -50,7 +50,7 @@
   padding: 0 0 0 30px;
   cursor: pointer;
   border: 1px solid;
-  border-color: rgba(33, 33, 33, 0.2);
+  border-color: var(--border-modal);
   outline: none;
   border-radius: 4px;
   transition: border 250ms var(--color-transition);
@@ -67,7 +67,7 @@
 
   cursor: pointer;
   border: 1px solid;
-  border-color: rgba(33, 33, 33, 0.2);
+  border-color: var(--border-modal);
   border-radius: 4px;
   outline: none;
 
@@ -142,6 +142,21 @@
 .terms {
   color: var(--title-text-color);
   cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+  }
+}
+
+.terms-item {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
 }
 
 .checkbox {

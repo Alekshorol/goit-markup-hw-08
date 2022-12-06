@@ -36,7 +36,7 @@
         var(--gradient-hero),
         var(--gradient-hero)
       ),
-      url(../../images/herotab/imgherotab@1x.jpg);
+      url(../images/herotab/imgherotab@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -44,17 +44,19 @@
           var(--gradient-hero),
           var(--gradient-hero)
         ),
-        url(../../images/herotab/imgherotab@2x.jpg);
+        url(../images/herotab/imgherotab@2x.jpg);
     }
   }
   // desctop screen
   @media screen and (min-width: 769px) {
     height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
     background-image: linear-gradient(
         var(--gradient-hero),
         var(--gradient-hero)
       ),
-      url(../../images/herodesctop/Imgherodesc@1x.jpg);
+      url(../images/herodesctop/Imgherodesc@1x.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -62,7 +64,7 @@
           var(--gradient-hero),
           var(--gradient-hero)
         ),
-        url(../../images/herodesctop/Imgherodesc@2x.jpg);
+        url(../images/herodesctop/Imgherodesc@2x.jpg);
     }
   }
 }

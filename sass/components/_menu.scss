@@ -50,7 +50,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--background-toggle);
 }
 
 .menu-container {
@@ -79,7 +79,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .mobile-menu {
@@ -115,26 +115,45 @@
 
   &:hover,
   &:focus {
-    color: #2196f3;
+    color: var(--title-text-color);
   }
 }
 
 .mobile-social-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: calc(22 / 18);
 
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--title-text-color);
+
+  @media screen and (min-width: 479px) {
+    font-size: 18px;
+  }
 }
+.mobile-social-item {
+  position: relative;
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 10px;
+    width: 22px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: var(--border-modal);
+    transform: rotate(90deg);
+  }
+}
+
 .mail-contacts-link {
   font-weight: 500;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .mail-contacts-item {
   margin-top: 32px;
@@ -142,10 +161,14 @@
 
 .mobile-contacts-link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: calc(40 / 34);
 
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--title-text-color);
+
+  @media screen and (min-width: 479px) {
+    font-size: 34px;
+  }
 }
