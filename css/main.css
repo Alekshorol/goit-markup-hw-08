@@ -279,6 +279,7 @@ img {
 }
 
 .contact-link {
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--mail-tel-cololr);
@@ -290,6 +291,11 @@ img {
 }
 .contact-link:hover, .contact-link:focus {
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1199px) {
+  .contact-link {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .contact-link {
@@ -506,6 +512,11 @@ img {
     min-width: 450px;
   }
 }
+@media screen and (min-width: 479px) {
+  .modal {
+    min-width: 450px;
+  }
+}
 
 .input-label {
   width: 358px;
@@ -707,9 +718,9 @@ img {
 .svg-icon-agree {
   position: relative;
   display: inline-block;
-  width: 16px;
+  width: 17px;
   height: 15px;
-  border: 1.8px solid var(--second-text-color);
+  border: 2px solid var(--second-text-color);
   border-radius: 2px;
   vertical-align: middle;
   margin-right: 9px;
@@ -1358,6 +1369,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .addres-social-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .addres-social-wrapper {
     display: -webkit-box;
@@ -1383,14 +1400,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 481px) {
   .social {
     margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1199px) {
