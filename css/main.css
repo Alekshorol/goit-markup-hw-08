@@ -1327,7 +1327,7 @@ img {
 .companies-link:hover, .companies-link:focus {
   border-color: var(--title-text-color);
 }
-@media screen and (min-width: 469px) {
+@media screen and (min-width: 479px) {
   .companies-link {
     width: 210px;
   }
